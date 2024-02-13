@@ -76,11 +76,28 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+            <form id="createEventForm">
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" id="nev" placeholder="" required>
+                    <label for="email">Esemény neve</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" id="helyszin" placeholder="" required>
+                    <label for="email">Esemény helyszíne</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <textarea class="form-control" id="leiras" rows="5" placeholder="" required style="height: 100% !important;"></textarea>
+                    <label for="leiras" class="form-label">Esemény leírása</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="date" class="form-control" id="idopont" placeholder="" required>
+                    <label for="idopont">Esemény időpontja</label>
+                </div>
+            </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégsem</button>
-          <button type="button" class="btn btn-primary">Létrehozás</button>
+          <button type="button" id="createEventButton" class="btn btn-primary">Létrehozás</button>
         </div>
       </div>
     </div>
