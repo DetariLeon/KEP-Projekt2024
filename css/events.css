@@ -1,0 +1,13 @@
+.events{
+    width: 95vw;
+    height: 250px;
+    background: rgba(103, 103, 103, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(103, 103, 103, 0.55);
+}
+.row>*{
+    padding: 0!important;
+}
