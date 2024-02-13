@@ -47,6 +47,7 @@
             createUserWithEmailAndPassword(auth, userEmail, userPassword)
                 .then(function (userCredential) {
                     var user = userCredential.user;
+                    window.location.href = "event.html";
                     console.log("Registration successful");
                 })
                 .catch(function (error) {
@@ -55,6 +56,7 @@
                     console.error('Registration error:', errorCode, errorMessage);
                 });
         });
+
     </script>
 
 
